@@ -5,65 +5,88 @@
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f5f7fa;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 header {
+    background-color: #003366;
+    color: white;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 40px 20px;
 }
 
 .logo {
-    max-width: 100px;
-    margin: 10px auto;
-    display: block;
+    max-width: 80px;
+    margin-bottom: 15px;
 }
 
 h1 {
-    font-size: 2rem;
-    color: #003366;
+    font-size: 2.5rem;
 }
 
 p {
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 section {
-    margin: 30px 0;
+    margin: 40px 0;
 }
 
 h2 {
     color: #003366;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
 }
 
 ol, ul {
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
-.btn-wsp {
+.pack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.pack {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.03);
+}
+
+.pack h3 {
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.btn-pack, .btn-wsp {
     display: inline-block;
-    background-color: #25D366;
+    margin-top: 15px;
+    background-color: #003366;
     color: white;
-    padding: 12px 20px;
-    border-radius: 8px;
+    padding: 10px 16px;
     text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
     font-weight: bold;
-    margin-top: 10px;
 }
 
-.btn-wsp:hover {
-    background-color: #1ebe5b;
+.btn-pack:hover, .btn-wsp:hover {
+    background-color: #002244;
 }
 
 footer {
-    margin-top: 50px;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #777;
+    padding: 30px 10px;
 }
