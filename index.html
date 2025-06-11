@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Citas y Trámites</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Citas y Trámites | Trámites Oficiales Fáciles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
   <header>
-    <div class="container">
-      <img src="logo.png" alt="Logo" class="logo" />
+    <div class="container nav">
+      <img src="logo.png" alt="Logo Citas y Trámites" class="logo" />
       <nav>
         <ul>
-          <li><a href="#ofrecemos">Servicios</a></li>
-          <li><a href="#tramites">Trámites</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#packs">Packs</a></li>
+          <li><a href="#como">Cómo funciona</a></li>
+          <li><a href="#faq">Preguntas</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
@@ -22,95 +26,143 @@
   </header>
 
   <section class="hero">
-    <div class="container">
-      <h1>Trámites rápidos, claros y sin complicaciones</h1>
-      <p>Te ayudamos paso a paso con tus gestiones oficiales. Fácil, sin errores y desde casa.</p>
-      <a href="#contacto" class="cta">Empezar ahora</a>
+    <div class="overlay"></div>
+    <div class="hero-content container">
+      <h1>Resolvemos tus trámites en minutos</h1>
+      <p>Extranjería, empadronamientos, ayudas, certificados y más. Te damos todo hecho, sin errores.</p>
+      <a href="#contacto" class="cta">Habla con nosotros</a>
     </div>
   </section>
 
-  <section class="ofrecemos" id="ofrecemos">
+  <section id="servicios" class="section servicios">
     <div class="container">
-      <h2>¿Qué ofrecemos?</h2>
-      <div class="features">
-        <div class="feature">
-          <h3>Guías personalizadas</h3>
-          <p>Explicaciones paso a paso adaptadas a tu situación.</p>
+      <h2>¿Qué hacemos por ti?</h2>
+      <div class="grid-cards">
+        <div class="card">
+          <h3>Citas Oficiales</h3>
+          <p>Te gestionamos la cita previa para DNI, pasaporte, extranjería, SEPE, Hacienda, etc.</p>
         </div>
-        <div class="feature">
-          <h3>Documentos listos</h3>
-          <p>Rellena tus formularios sin errores. Te lo damos todo preparado.</p>
+        <div class="card">
+          <h3>Guías paso a paso</h3>
+          <p>Instrucciones claras adaptadas a tu ciudad y situación personal.</p>
         </div>
-        <div class="feature">
-          <h3>Atención cercana</h3>
-          <p>Hablamos por WhatsApp para que no te pierdas en el proceso.</p>
+        <div class="card">
+          <h3>Documentos rellenados</h3>
+          <p>Formularios y escritos oficiales listos para imprimir y presentar.</p>
+        </div>
+        <div class="card">
+          <h3>Recordatorios automáticos</h3>
+          <p>No pierdas tu cita. Te enviamos alertas y seguimiento.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="tramites" id="tramites">
+  <section id="packs" class="section packs">
     <div class="container">
-      <h2>Trámites disponibles</h2>
-      <div class="cards">
+      <h2>Packs más demandados</h2>
+      <div class="grid-cards">
         <div class="card">
           <h3>NIE / Extranjería</h3>
-          <p>Todo lo necesario para tramitar el NIE paso a paso.</p>
+          <p>Formulario + guía + reserva cita. Te acompañamos en todo.</p>
+          <a href="#contacto" class="btn-sec">Solicitar</a>
         </div>
         <div class="card">
           <h3>Empadronamiento</h3>
-          <p>Formulario, cita y requisitos explicados para cualquier municipio.</p>
+          <p>Modelo rellenado + instrucciones por ciudad + documento PDF listo.</p>
+          <a href="#contacto" class="btn-sec">Iniciar</a>
         </div>
         <div class="card">
-          <h3>Ayuda alquiler</h3>
-          <p>Te guiamos para pedir la ayuda y no cometer errores.</p>
+          <h3>Ayuda Alquiler</h3>
+          <p>Todo el proceso para pedirla correctamente y no ser rechazado.</p>
+          <a href="#contacto" class="btn-sec">Solicitar ayuda</a>
         </div>
         <div class="card">
-          <h3>Cita SEPE</h3>
-          <p>Accede a tu prestación sin complicarte con la web oficial.</p>
+          <h3>Certificado Digital</h3>
+          <p>Solicitud oficial, instrucciones paso a paso y seguimiento.</p>
+          <a href="#contacto" class="btn-sec">Ver más</a>
+        </div>
+        <div class="card">
+          <h3>Cita SEPE / Prestaciones</h3>
+          <p>Te guiamos para no fallar en la solicitud del paro u otras ayudas.</p>
+          <a href="#contacto" class="btn-sec">Solicitar</a>
+        </div>
+        <div class="card">
+          <h3>Becas y ayudas</h3>
+          <p>Documentación para becas MEC, comedor, transporte y más.</p>
+          <a href="#contacto" class="btn-sec">Iniciar gestión</a>
+        </div>
+        <div class="card">
+          <h3>Homologación de Títulos</h3>
+          <p>Ayuda para preparar todo correctamente y sin errores.</p>
+          <a href="#contacto" class="btn-sec">Ver pack</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="funciona">
+  <section id="como" class="section funciona">
     <div class="container">
       <h2>¿Cómo funciona?</h2>
       <ol>
-        <li>Nos cuentas qué necesitas</li>
-        <li>Te damos guía + documentos listos</li>
-        <li>Presentas todo sin errores ni retrasos</li>
+        <li>Nos escribes por WhatsApp y eliges tu trámite</li>
+        <li>Recibes todo preparado: guía + documentos + seguimiento</li>
+        <li>Lo presentas sin errores y sin perder tiempo</li>
       </ol>
     </div>
   </section>
 
-  <section class="opiniones">
+  <section class="section testimonios">
     <div class="container">
-      <h2>Lo que dicen nuestros usuarios</h2>
-      <div class="testimonios">
-        <div class="testimonio">
-          <p>“Pensaba que esto iba a ser un lío, pero fue rapidísimo. Muy agradecida.”</p>
-          <span>- Laura M.</span>
+      <h2>Lo que opinan nuestros clientes</h2>
+      <div class="grid-cards">
+        <div class="card">
+          <p>“Me solucionaron un empadronamiento que llevaba meses retrasando. Rápido y claro.”</p>
+          <strong>- Laura M.</strong>
         </div>
-        <div class="testimonio">
-          <p>“Me ayudaron por WhatsApp en todo momento. Muy profesionales.”</p>
-          <span>- Carlos G.</span>
+        <div class="card">
+          <p>“Tenía miedo con extranjería y me lo hicieron todo. Ya tengo cita y formulario listo.”</p>
+          <strong>- Saúl D.</strong>
+        </div>
+        <div class="card">
+          <p>“Te atienden por WhatsApp como si te conocieran de toda la vida. Muy recomendados.”</p>
+          <strong>- Andrea R.</strong>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="contacto" id="contacto">
+  <section id="faq" class="section preguntas">
     <div class="container">
-      <h2>¿Necesitas ayuda?</h2>
-      <p>Estamos disponibles por WhatsApp de lunes a viernes. Te atenderemos en minutos.</p>
+      <h2>Preguntas frecuentes</h2>
+      <div class="grid-cards">
+        <div class="card">
+          <h3>¿También hacéis trámites para extranjeros?</h3>
+          <p>Sí, especialmente NIE, arraigo, nacionalidad, empadronamientos, visados, etc.</p>
+        </div>
+        <div class="card">
+          <h3>¿Puedo pagar por Bizum?</h3>
+          <p>Sí, aceptamos Bizum y transferencia. Sin complicaciones.</p>
+        </div>
+        <div class="card">
+          <h3>¿Cuánto tardáis en entregarme los documentos?</h3>
+          <p>En la mayoría de casos en menos de 12h.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section contacto">
+    <div class="container text-center">
+      <h2>¿Necesitas ayuda ya?</h2>
+      <p>Escríbenos directamente por WhatsApp y dinos qué necesitas. Te atendemos en minutos.</p>
       <a href="#" class="cta">Contactar por WhatsApp</a>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>© 2025 Citas y Trámites | Todos los derechos reservados</p>
+      <p>© 2025 Citas y Trámites. Todos los derechos reservados.</p>
       <p><a href="#">Aviso legal</a> · <a href="#">Política de privacidad</a></p>
     </div>
   </footer>
