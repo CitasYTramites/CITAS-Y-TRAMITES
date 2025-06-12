@@ -6,14 +6,105 @@
   <title>Citas y Trámites</title>
   <link rel="stylesheet" href="estilos.css">
   <link rel="icon" type="image/png" href="favicon.ico">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x600/?paperwork,office') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+    .hero .logo-header {
+      width: 60px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    .servicios .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-left: 6px solid #007bff;
+      border-radius: 6px;
+      transition: box-shadow 0.3s ease;
+    }
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin: 0;
+      color: #007bff;
+    }
+    .reseñas-carousel {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+    .review-container {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 400%;
+    }
+    .review {
+      flex: 0 0 100%;
+      padding: 20px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .review img {
+      width: 32px;
+    }
+    .stars {
+      font-size: 1.2em;
+      color: #f7b731;
+    }
+    .carousel-controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    .carousel-controls button {
+      background: rgba(0, 0, 0, 0.4);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <header class="hero">
-    <div class="overlay"></div>
     <div class="container">
-      <a href="index.html" class="logo-link">
-        <img src="favicon.ico" alt="Citas y Trámites" class="logo-header">
-      </a>
+      <img src="favicon.ico" alt="Citas y Trámites" class="logo-header">
       <h1>Bienvenido a Citas y Trámites</h1>
       <p>Te ayudamos a gestionar tus trámites de forma rápida y sencilla</p>
       <a href="#servicios" class="btn">Ver Servicios</a>
@@ -24,77 +115,36 @@
     <div class="container">
       <h2>Servicios más demandados</h2>
       <div class="grid">
-
         <a href="extranjeria.html" class="card-link">
           <div class="card">
             <h3>Extranjería</h3>
             <p>NIE, nacionalidad, arraigo, visados…</p>
           </div>
         </a>
-
-        <a href="empadronamiento.html" class="card-link">
-          <div class="card">
-            <h3>Empadronamiento</h3>
-            <p>Cambia tu domicilio legal o empadrónate por primera vez.</p>
-          </div>
-        </a>
-
-        <a href="certificado-digital.html" class="card-link">
-          <div class="card">
-            <h3>Certificado Digital</h3>
-            <p>Accede a la mayoría de trámites online con tu identidad verificada.</p>
-          </div>
-        </a>
-
-        <a href="vida-laboral.html" class="card-link">
-          <div class="card">
-            <h3>Informe de Vida Laboral</h3>
-            <p>Documento imprescindible para subsidios y trámites laborales.</p>
-          </div>
-        </a>
-
-        <a href="sepe.html" class="card-link">
-          <div class="card">
-            <h3>Cita SEPE</h3>
-            <p>Solicita prestaciones, subsidios, ayudas y orientación laboral.</p>
-          </div>
-        </a>
-
-        <a href="ayuda-alquiler.html" class="card-link">
-          <div class="card">
-            <h3>Ayuda Alquiler</h3>
-            <p>Solicita el bono o ayuda según tu comunidad autónoma.</p>
-          </div>
-        </a>
-
         <a href="dni.html" class="card-link">
           <div class="card">
-            <h3>Cita DNI / Pasaporte</h3>
-            <p>Reserva tu cita para renovar o expedir tu documento.</p>
+            <h3>DNI / Pasaporte</h3>
+            <p>Solicita cita para renovar o sacar tu documento.</p>
           </div>
         </a>
-
         <a href="itv.html" class="card-link">
           <div class="card">
             <h3>ITV</h3>
-            <p>Pide tu cita previa y asegúrate de pasar la inspección sin complicaciones.</p>
+            <p>Consigue tu cita previa y pasa tu inspección sin problemas.</p>
           </div>
         </a>
-
         <a href="cita-medica.html" class="card-link">
           <div class="card">
-            <h3>Citas médicas</h3>
-            <p>Consulta, cambia o anula tu cita médica según tu comunidad.</p>
+            <h3>Cita médica</h3>
+            <p>Solicita o modifica tu cita en el centro de salud.</p>
           </div>
         </a>
-
         <a href="seguridad-social.html" class="card-link">
           <div class="card">
             <h3>Seguridad Social</h3>
-            <p>Cita previa para trámites como pensiones, afiliación, bajas médicas, etc.</p>
+            <p>Cita para afiliaciones, pensiones, bajas y más.</p>
           </div>
         </a>
-
       </div>
     </div>
   </section>
@@ -112,20 +162,14 @@
           </div>
           <div class="review">
             <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google">
-            <p>“No sabía cómo hacer mi trámite y gracias a ellos lo hice sin problemas. ¡Gracias!”</p>
-            <strong>- Andrés V.</strong>
+            <p>“Tuve problemas con el SEPE y me ayudaron a solucionarlo sin perder tiempo.”</p>
+            <strong>- Rubén M.</strong>
             <div class="stars">★★★★★</div>
           </div>
           <div class="review">
             <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google">
-            <p>“Rápidos, atentos y muy profesionales. Sin duda volveré a contactarles.”</p>
-            <strong>- Marta L.</strong>
-            <div class="stars">★★★★★</div>
-          </div>
-          <div class="review">
-            <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google">
-            <p>“Tenía dudas sobre mi ayuda de alquiler y me guiaron paso a paso sin complicaciones.”</p>
-            <strong>- Iván R.</strong>
+            <p>“Me explicaron cómo pedir el certificado digital en minutos.”</p>
+            <strong>- Sara T.</strong>
             <div class="stars">★★★★★</div>
           </div>
         </div>
@@ -136,42 +180,6 @@
       </div>
     </div>
   </section>
-
-  <section class="info-section">
-    <div class="container">
-      <div class="info-card">
-        <h3>Quiénes somos</h3>
-        <p>Somos un equipo especializado en trámites administrativos, centrado en facilitarte todo lo que necesitas sin complicaciones.</p>
-        <a href="quienes-somos.html">Ver más</a>
-      </div>
-      <div class="info-card">
-        <h3>Términos y Condiciones</h3>
-        <p>Consulta las condiciones de uso de nuestros servicios, derechos, responsabilidades y garantías.</p>
-        <a href="terminos-condiciones.html">Ver más</a>
-      </div>
-      <div class="info-card">
-        <h3>Política de Privacidad</h3>
-        <p>Protegemos tus datos personales con total transparencia. Conoce cómo los gestionamos.</p>
-        <a href="politica-privacidad.html">Ver más</a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Citas y Trámites. Todos los derechos reservados.</p>
-      <ul>
-        <li><a href="quienes-somos.html">Quiénes somos</a></li>
-        <li><a href="terminos-condiciones.html">Términos y condiciones</a></li>
-        <li><a href="politica-privacidad.html">Política de privacidad</a></li>
-        <li><a href="mailto:info@citasytramites.es">Contacto</a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <a href="https://wa.me/34600123456" class="whatsapp-float" target="_blank">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
-  </a>
 
   <script>
     let index = 0;
