@@ -251,18 +251,31 @@ footer .copyright {
   padding-top: 20px;
 }
 
-/* Botón flotante WhatsApp */
 .whatsapp-float {
   position: fixed;
+  width: 60px;
+  height: 60px;
   bottom: 20px;
   right: 20px;
-  z-index: 999;
+  z-index: 9999;
+  background-color: #25D366;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
 }
 
 .whatsapp-float img {
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
 }
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
 
 /* Logo en cabecera */
 .logo-link {
