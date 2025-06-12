@@ -1,170 +1,152 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Citas y Trámites | Trámites Oficiales Fáciles</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="estilos.css" />
-</head>
-<body>
-  <header>
-    <div class="container nav">
-      <img src="logo.png" alt="Logo Citas y Trámites" class="logo" />
-      <nav>
-        <ul>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#packs">Packs</a></li>
-          <li><a href="#como">Cómo funciona</a></li>
-          <li><a href="#faq">Preguntas</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+/* ESTILOS PARA RESEÑAS + CONTADORES + FOOTER */
 
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content container">
-      <h1>Resolvemos tus trámites en minutos</h1>
-      <p>Extranjería, empadronamientos, ayudas, certificados y más. Te damos todo hecho, sin errores.</p>
-      <a href="#contacto" class="cta">Habla con nosotros</a>
-    </div>
-  </section>
+/* OPINIONES */
+.opinion-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+}
 
-  <section id="servicios" class="section servicios">
-    <div class="container">
-      <h2>¿Qué hacemos por ti?</h2>
-      <div class="grid-cards">
-        <div class="card">
-          <h3>Citas Oficiales</h3>
-          <p>Te gestionamos la cita previa para DNI, pasaporte, extranjería, SEPE, Hacienda, etc.</p>
-        </div>
-        <div class="card">
-          <h3>Guías paso a paso</h3>
-          <p>Instrucciones claras adaptadas a tu ciudad y situación personal.</p>
-        </div>
-        <div class="card">
-          <h3>Documentos rellenados</h3>
-          <p>Formularios y escritos oficiales listos para imprimir y presentar.</p>
-        </div>
-        <div class="card">
-          <h3>Recordatorios automáticos</h3>
-          <p>No pierdas tu cita. Te enviamos alertas y seguimiento.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+.valoracion {
+  flex: 0 0 200px;
+  text-align: center;
+}
 
-  <section id="packs" class="section packs">
-    <div class="container">
-      <h2>Packs más demandados</h2>
-      <div class="grid-cards">
-        <div class="card">
-          <h3>NIE / Extranjería</h3>
-          <p>Formulario + guía + reserva cita. Te acompañamos en todo.</p>
-          <a href="#contacto" class="btn-sec">Solicitar</a>
-        </div>
-        <div class="card">
-          <h3>Empadronamiento</h3>
-          <p>Modelo rellenado + instrucciones por ciudad + documento PDF listo.</p>
-          <a href="#contacto" class="btn-sec">Iniciar</a>
-        </div>
-        <div class="card">
-          <h3>Ayuda Alquiler</h3>
-          <p>Todo el proceso para pedirla correctamente y no ser rechazado.</p>
-          <a href="#contacto" class="btn-sec">Solicitar ayuda</a>
-        </div>
-        <div class="card">
-          <h3>Certificado Digital</h3>
-          <p>Solicitud oficial, instrucciones paso a paso y seguimiento.</p>
-          <a href="#contacto" class="btn-sec">Ver más</a>
-        </div>
-        <div class="card">
-          <h3>Cita SEPE / Prestaciones</h3>
-          <p>Te guiamos para no fallar en la solicitud del paro u otras ayudas.</p>
-          <a href="#contacto" class="btn-sec">Solicitar</a>
-        </div>
-        <div class="card">
-          <h3>Becas y ayudas</h3>
-          <p>Documentación para becas MEC, comedor, transporte y más.</p>
-          <a href="#contacto" class="btn-sec">Iniciar gestión</a>
-        </div>
-        <div class="card">
-          <h3>Homologación de Títulos</h3>
-          <p>Ayuda para preparar todo correctamente y sin errores.</p>
-          <a href="#contacto" class="btn-sec">Ver pack</a>
-        </div>
-      </div>
-    </div>
-  </section>
+.valoracion h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #003366;
+}
 
-  <section id="como" class="section funciona">
-    <div class="container">
-      <h2>¿Cómo funciona?</h2>
-      <ol>
-        <li>Nos escribes por WhatsApp y eliges tu trámite</li>
-        <li>Recibes todo preparado: guía + documentos + seguimiento</li>
-        <li>Lo presentas sin errores y sin perder tiempo</li>
-      </ol>
-    </div>
-  </section>
+.estrellas {
+  font-size: 2rem;
+  color: gold;
+  margin: 10px 0;
+}
 
-  <section class="section testimonios">
-    <div class="container">
-      <h2>Lo que opinan nuestros clientes</h2>
-      <div class="grid-cards">
-        <div class="card">
-          <p>“Me solucionaron un empadronamiento que llevaba meses retrasando. Rápido y claro.”</p>
-          <strong>- Laura M.</strong>
-        </div>
-        <div class="card">
-          <p>“Tenía miedo con extranjería y me lo hicieron todo. Ya tengo cita y formulario listo.”</p>
-          <strong>- Saúl D.</strong>
-        </div>
-        <div class="card">
-          <p>“Te atienden por WhatsApp como si te conocieran de toda la vida. Muy recomendados.”</p>
-          <strong>- Andrea R.</strong>
-        </div>
-      </div>
-    </div>
-  </section>
+.logo-google {
+  width: 60px;
+  margin-top: 10px;
+}
 
-  <section id="faq" class="section preguntas">
-    <div class="container">
-      <h2>Preguntas frecuentes</h2>
-      <div class="grid-cards">
-        <div class="card">
-          <h3>¿También hacéis trámites para extranjeros?</h3>
-          <p>Sí, especialmente NIE, arraigo, nacionalidad, empadronamientos, visados, etc.</p>
-        </div>
-        <div class="card">
-          <h3>¿Puedo pagar por Bizum?</h3>
-          <p>Sí, aceptamos Bizum y transferencia. Sin complicaciones.</p>
-        </div>
-        <div class="card">
-          <h3>¿Cuánto tardáis en entregarme los documentos?</h3>
-          <p>En la mayoría de casos en menos de 12h.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+.reseñas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  flex: 1;
+}
 
-  <section id="contacto" class="section contacto">
-    <div class="container text-center">
-      <h2>¿Necesitas ayuda ya?</h2>
-      <p>Escríbenos directamente por WhatsApp y dinos qué necesitas. Te atendemos en minutos.</p>
-      <a href="#" class="cta">Contactar por WhatsApp</a>
-    </div>
-  </section>
+.reseñas .card {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
 
-  <footer>
-    <div class="container">
-      <p>© 2025 Citas y Trámites. Todos los derechos reservados.</p>
-      <p><a href="#">Aviso legal</a> · <a href="#">Política de privacidad</a></p>
-    </div>
-  </footer>
-</body>
-</html>
+/* CONTADORES */
+.contadores {
+  background: #e6f2ff;
+}
+
+.contador-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.contador {
+  flex: 0 0 200px;
+}
+
+.contador img {
+  width: 48px;
+  margin-bottom: 10px;
+}
+
+.contador h3 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 5px;
+}
+
+.contador p {
+  font-size: 1rem;
+}
+
+/* FOOTER */
+footer.pie {
+  background: #e0f0ff;
+  padding: 60px 0 20px;
+  color: #003366;
+}
+
+.pie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.pie .bloque h4 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.pie .bloque ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pie .bloque ul li {
+  margin-bottom: 10px;
+}
+
+.pie .bloque ul li a {
+  color: #003366;
+  text-decoration: none;
+}
+
+.pie .bloque ul li a:hover {
+  text-decoration: underline;
+}
+
+.pie .pagos img {
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.bottom-bar {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.bottom-bar a {
+  color: #005599;
+  text-decoration: none;
+}
+
+.bottom-bar a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .opinion-grid, .reseñas, .contador-grid, .pie-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .reseñas {
+    grid-template-columns: 1fr;
+  }
+}
