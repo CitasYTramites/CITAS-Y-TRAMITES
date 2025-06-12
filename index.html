@@ -13,15 +13,25 @@
       background-color: #f9f9f9;
     }
     .hero {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x600/?paperwork,office') center/cover no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x600/?office,paperwork') center/cover no-repeat;
       color: white;
       text-align: center;
       padding: 100px 20px;
-      position: relative;
     }
-    .hero .logo-header {
-      width: 60px;
+    .logo-header {
+      width: 80px;
+      background: white;
+      border-radius: 50%;
+      padding: 10px;
       margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.2rem;
     }
     .btn {
       display: inline-block;
@@ -37,67 +47,90 @@
     .btn:hover {
       background-color: #0056b3;
     }
-    .servicios .grid {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      margin-top: 20px;
+    .servicios {
+      padding: 40px 20px;
     }
-    .card-link {
-      text-decoration: none;
-      color: inherit;
+    .servicios h2 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 30px;
+    }
+    .servicios .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
     .card {
       background: white;
       padding: 20px;
+      border-radius: 8px;
       border-left: 6px solid #007bff;
-      border-radius: 6px;
-      transition: box-shadow 0.3s ease;
-    }
-    .card:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
     .card h3 {
-      margin: 0;
+      margin-top: 0;
       color: #007bff;
     }
-    .reseñas-carousel {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
+    .reseñas {
+      padding: 40px 20px;
+      background-color: #f3f3f3;
     }
-    .review-container {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-      width: 400%;
+    .reseñas h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .reseñas .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
     .review {
-      flex: 0 0 100%;
+      background: white;
       padding: 20px;
+      border-radius: 8px;
       text-align: center;
-      box-sizing: border-box;
     }
     .review img {
       width: 32px;
+      margin-bottom: 10px;
+    }
+    .review p {
+      font-style: italic;
     }
     .stars {
       font-size: 1.2em;
       color: #f7b731;
+      margin-top: 10px;
     }
-    .carousel-controls {
-      position: absolute;
-      top: 50%;
-      width: 100%;
+    footer {
+      background-color: #f1f1f1;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #333;
+    }
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
       display: flex;
-      justify-content: space-between;
-      transform: translateY(-50%);
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
     }
-    .carousel-controls button {
-      background: rgba(0, 0, 0, 0.4);
-      color: white;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
+    footer ul li a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
     }
   </style>
 </head>
@@ -105,7 +138,7 @@
   <header class="hero">
     <div class="container">
       <img src="favicon.ico" alt="Citas y Trámites" class="logo-header">
-      <h1>Bienvenido a Citas y Trámites</h1>
+      <h1>CITAS Y TRÁMITES</h1>
       <p>Te ayudamos a gestionar tus trámites de forma rápida y sencilla</p>
       <a href="#servicios" class="btn">Ver Servicios</a>
     </div>
@@ -115,36 +148,38 @@
     <div class="container">
       <h2>Servicios más demandados</h2>
       <div class="grid">
-        <a href="extranjeria.html" class="card-link">
-          <div class="card">
-            <h3>Extranjería</h3>
-            <p>NIE, nacionalidad, arraigo, visados…</p>
-          </div>
-        </a>
-        <a href="dni.html" class="card-link">
-          <div class="card">
-            <h3>DNI / Pasaporte</h3>
-            <p>Solicita cita para renovar o sacar tu documento.</p>
-          </div>
-        </a>
-        <a href="itv.html" class="card-link">
-          <div class="card">
-            <h3>ITV</h3>
-            <p>Consigue tu cita previa y pasa tu inspección sin problemas.</p>
-          </div>
-        </a>
-        <a href="cita-medica.html" class="card-link">
-          <div class="card">
-            <h3>Cita médica</h3>
-            <p>Solicita o modifica tu cita en el centro de salud.</p>
-          </div>
-        </a>
-        <a href="seguridad-social.html" class="card-link">
-          <div class="card">
-            <h3>Seguridad Social</h3>
-            <p>Cita para afiliaciones, pensiones, bajas y más.</p>
-          </div>
-        </a>
+        <div class="card">
+          <h3>Extranjería</h3>
+          <p>NIE, nacionalidad, visados, arraigo...</p>
+        </div>
+        <div class="card">
+          <h3>DNI / Pasaporte</h3>
+          <p>Solicita o renueva tus documentos oficiales.</p>
+        </div>
+        <div class="card">
+          <h3>ITV</h3>
+          <p>Pide cita y asegúrate de pasar tu revisión.</p>
+        </div>
+        <div class="card">
+          <h3>Cita médica</h3>
+          <p>Reserva o gestiona tu atención sanitaria.</p>
+        </div>
+        <div class="card">
+          <h3>Seguridad Social</h3>
+          <p>Pensiones, afiliaciones, bajas laborales...</p>
+        </div>
+        <div class="card">
+          <h3>Certificado Digital</h3>
+          <p>Te ayudamos a solicitarlo paso a paso.</p>
+        </div>
+        <div class="card">
+          <h3>Vida laboral</h3>
+          <p>Te indicamos cómo obtenerla sin complicaciones.</p>
+        </div>
+        <div class="card">
+          <h3>Ayuda Alquiler</h3>
+          <p>Tramitamos contigo las ayudas vigentes.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -152,43 +187,44 @@
   <section id="reseñas" class="reseñas">
     <div class="container">
       <h2>Opiniones reales de nuestros usuarios</h2>
-      <div class="reseñas-carousel">
-        <div class="review-container" id="carousel">
-          <div class="review">
-            <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google">
-            <p>“Muy buena atención y me resolvieron todo súper rápido. Recomendado 100%.”</p>
-            <strong>- Laura G.</strong>
-            <div class="stars">★★★★★</div>
-          </div>
-          <div class="review">
-            <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google">
-            <p>“Tuve problemas con el SEPE y me ayudaron a solucionarlo sin perder tiempo.”</p>
-            <strong>- Rubén M.</strong>
-            <div class="stars">★★★★★</div>
-          </div>
-          <div class="review">
-            <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google">
-            <p>“Me explicaron cómo pedir el certificado digital en minutos.”</p>
-            <strong>- Sara T.</strong>
-            <div class="stars">★★★★★</div>
-          </div>
+      <div class="grid">
+        <div class="review">
+          <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google">
+          <p>“Me resolvieron todo en menos de 15 minutos. Muy atentos.”</p>
+          <strong>- Laura G.</strong>
+          <div class="stars">★★★★★</div>
         </div>
-        <div class="carousel-controls">
-          <button onclick="mover(-1)">&#10094;</button>
-          <button onclick="mover(1)">&#10095;</button>
+        <div class="review">
+          <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google">
+          <p>“No entendía nada de extranjería, y me guiaron sin líos.”</p>
+          <strong>- Andrés V.</strong>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="review">
+          <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google">
+          <p>“Rápidos, eficaces y muy profesionales. Gracias.”</p>
+          <strong>- Marta L.</strong>
+          <div class="stars">★★★★★</div>
         </div>
       </div>
     </div>
   </section>
 
-  <script>
-    let index = 0;
-    const container = document.getElementById('carousel');
-    function mover(dir) {
-      const total = container.children.length;
-      index = (index + dir + total) % total;
-      container.style.transform = `translateX(-${index * 100}%)`;
-    }
-  </script>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Citas y Trámites. Todos los derechos reservados.</p>
+      <ul>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="terminos-condiciones.html">Términos y condiciones</a></li>
+        <li><a href="politica-privacidad.html">Política de privacidad</a></li>
+        <li><a href="mailto:info@citasytramites.es">Contacto</a></li>
+      </ul>
+      <p>🔢 Trámites gestionados hasta ahora: <strong>13.456</strong></p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/34600123456" class="whatsapp-float" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+  </a>
 </body>
 </html>
