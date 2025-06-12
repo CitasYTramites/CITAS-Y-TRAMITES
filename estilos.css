@@ -168,3 +168,225 @@ footer .copyright {
   padding-top: 20px;
   color: #94a3b8;
 }
+/* Reset y fuente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f9fafb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.hero {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1573164574396-9d134e4d6cd8?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1e40af;
+}
+
+.intro,
+.valor {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.intro h2,
+.valor h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.valor ul {
+  list-style: none;
+  padding-left: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.valor ul li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.servicios {
+  background-color: #f1f5f9;
+  padding: 60px 20px;
+}
+
+.servicios h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.reseñas {
+  background-color: #e5e7eb;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.reseñas h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.rating {
+  margin-bottom: 30px;
+}
+
+.calidad {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #10b981;
+}
+
+.estrellas {
+  font-size: 2rem;
+  color: #facc15;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  text-align: left;
+}
+
+.review {
+  background: #ffffff;
+  padding: 20px;
+  border-left: 4px solid #2563eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.review span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4b5563;
+}
+
+footer {
+  background-color: #1f2937;
+  color: white;
+  padding: 60px 20px 30px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #93c5fd;
+}
+
+.footer-section p,
+.footer-section li {
+  font-size: 0.95rem;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.footer-section a {
+  color: #dbeafe;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer .copyright {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #9ca3af;
+  border-top: 1px solid #374151;
+  padding-top: 20px;
+}
