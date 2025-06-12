@@ -1,4 +1,4 @@
-/* Estilos profesionales actualizados */
+/* Estilos profesionales mejorados */
 html {
   scroll-behavior: smooth;
 }
@@ -67,6 +67,21 @@ body {
 
 .btn:hover {
   background-color: #1e40af;
+}
+
+.btn-volver {
+  background-color: #e5e7eb;
+  color: #1f2937;
+  padding: 8px 16px;
+  margin: 20px auto;
+  display: inline-block;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-volver:hover {
+  background-color: #d1d5db;
 }
 
 section {
@@ -165,6 +180,22 @@ section {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.review-header img {
+  width: 20px;
+}
+
+.stars {
+  color: #facc15;
+  font-size: 1.1rem;
+}
+
 .review span {
   display: block;
   margin-top: 10px;
@@ -218,4 +249,28 @@ footer .copyright {
   color: #9ca3af;
   border-top: 1px solid #374151;
   padding-top: 20px;
+}
+
+/* Botón flotante WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-float img {
+  width: 48px;
+  height: 48px;
+}
+
+/* Logo en cabecera */
+.logo-link {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.logo-link img.logo-header {
+  height: 50px;
+  border-radius: 10px;
 }
