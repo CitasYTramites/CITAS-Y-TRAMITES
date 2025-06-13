@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trámites de Extranjería</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f7f7;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #003366;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      position: relative;
+      color: white;
+      height: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+    .card-content {
+      position: relative;
+      z-index: 1;
+    }
+    .card h3 {
+      margin: 0 0 5px;
+    }
+    .card p {
+      font-size: 0.95rem;
+      margin: 0 0 10px;
+    }
+    .card a {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Selecciona tu trámite de extranjería</h1>
+    <div class="grid">
+      <div class="card" style="background-image: url('https://source.unsplash.com/400x300/?passport,travel');">
+        <div class="card-content">
+          <h3>NIE Inicial</h3>
+          <p>Primera solicitud de Número de Identidad de Extranjero.</p>
+          <a href="formulario.html?tramite=nie-inicial">Solicitar</a>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('https://source.unsplash.com/400x300/?visa');">
+        <div class="card-content">
+          <h3>Renovación NIE</h3>
+          <p>Renueva tu documento de residencia de forma segura.</p>
+          <a href="formulario.html?tramite=renovacion-nie">Solicitar</a>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('https://source.unsplash.com/400x300/?citizenship');">
+        <div class="card-content">
+          <h3>Nacionalidad</h3>
+          <p>Tramitamos tu nacionalidad española paso a paso.</p>
+          <a href="formulario.html?tramite=nacionalidad">Solicitar</a>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('https://source.unsplash.com/400x300/?contract');">
+        <div class="card-content">
+          <h3>Arraigo</h3>
+          <p>Asistencia en arraigo laboral, social o familiar.</p>
+          <a href="formulario.html?tramite=arraigo">Solicitar</a>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('https://source.unsplash.com/400x300/?student');">
+        <div class="card-content">
+          <h3>Visado de Estudios</h3>
+          <p>Te ayudamos a gestionar tu visado como estudiante.</p>
+          <a href="formulario.html?tramite=visado-estudios">Solicitar</a>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('https://source.unsplash.com/400x300/?office');">
+        <div class="card-content">
+          <h3>Visado de Trabajo</h3>
+          <p>Preparamos toda la documentación necesaria.</p>
+          <a href="formulario.html?tramite=visado-trabajo">Solicitar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
